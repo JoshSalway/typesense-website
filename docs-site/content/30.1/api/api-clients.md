@@ -145,6 +145,7 @@ We also have the following framework integrations:
 - Laravel:
   - [Laravel Scout](https://laravel.com/docs/11.x/scout#typesense) (official native integration)
   - [sebastiansulinski / laravel-search](https://github.com/sebastiansulinski/laravel-search)
+  - [SearchSense](https://velthove.nl/blog/searchsense) SearchSense is a Laravel library that provides an end-to-end, opinionated Typesense integration—handling request parsing, OOP query building, filtering/whitelisting, and consistent JSON responses so you can drop powerful search into apps without writing raw Typesense queries.
 - [Symfony](https://github.com/acseo/TypesenseBundle)
 - [Gatsby](https://www.gatsbyjs.com/plugins/gatsby-plugin-typesense/)
 - [SEAL](https://github.com/schranz-search/schranz-search) provides integrations of Typesense in Laravel, Symfony, Spiral, Yii and Laminas Mezzio PHP Framework
