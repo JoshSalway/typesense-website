@@ -1374,7 +1374,7 @@ client.curationSets('curate_products').items('dynamic-sort-filter').retrieve()
   <template v-slot:PHP>
 
 ```php
-$client->curationSets['curate_products']->items['dynamic-sort-filter']->retrieve();
+$client->curationSets['curate_products']->getItems()['dynamic-sort-filter']->retrieve();
 ```
 
   </template>
