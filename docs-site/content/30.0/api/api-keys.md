@@ -341,7 +341,19 @@ In general, you want to use the format `resource:verb` pattern to indicate an ac
 | `aliases:delete`     | Allows the deletion of aliases.                   |
 | `aliases:*`          | Allows all alias operations.                      |
 
-#### Synonym actions
+#### Synonym Set actions
+
+| Action                  | Description                                                               |
+|:------------------------|:--------------------------------------------------------------------------|
+| `synonym_sets:list`     | Allows all synonym sets to be fetched (GET /synonym_sets).                |
+| `synonym_sets:get`      | Allows a single synonym set to be retrieved (GET /synonym_sets/:name).    |
+| `synonym_sets:create`   | Allows the creation/update of synonym sets (PUT /synonym_sets/:name).     |
+| `synonym_sets:delete`   | Allows the deletion of synonym sets (DELETE /synonym_sets/:name).         |
+| `synonym_sets:*`        | Allows all synonym set operations.                                        |
+
+#### Synonym actions (Collection-level)
+
+These actions apply to the collection-level synonym endpoints (`/collections/{collection}/synonyms`).
 
 | Action               | Description                                       |
 |:---------------------|:--------------------------------------------------|
