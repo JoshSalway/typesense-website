@@ -1,6 +1,6 @@
 # Laravel Full-Text Search
 
-[Laravel Scout](https://laravel.com/docs/11.x/scout) is a powerful package that provides a simple, driver-based solution for adding full-text search to [Laravel Eloquent](https://laravel.com/docs/11.x/eloquent) ORM models. 
+[Laravel Scout](https://laravel.com/docs/12.x/scout) is a powerful package that provides a simple, driver-based solution for adding full-text search to [Laravel Eloquent](https://laravel.com/docs/12.x/eloquent) ORM models. 
 
 Laravel Scout has native support for Typesense and this guide will focus on how to add the Laravel Scout Typesense Driver to an existing Laravel project in order to add full-text search to your Laravel application.
 
@@ -20,17 +20,17 @@ There's also a free multi-episode course on Typesense from Laracasts available c
 
 ## Prerequisites
 
-This guide will use [Laravel Sail](https://laravel.com/docs/11.x/sail), a CLI that enables you to run Laravel applications using Docker. 
+This guide will use [Laravel Sail](https://laravel.com/docs/12.x/sail), a CLI that enables you to run Laravel applications using Docker. 
 
 Please ensure that you have Docker installed on your machine before proceeding. You can install Docker by following the instructions on the [official Docker website](https://docs.docker.com/get-docker/). 
 
-To create a new Laravel project using Laravel Sail, you can follow the instructions in the [official Laravel documentation](https://laravel.com/docs/11.x/installation#docker-installation-using-sail). 
+To create a new Laravel project using Laravel Sail, you can follow the instructions in the [official Laravel documentation](https://laravel.com/docs/12.x/installation#docker-installation-using-sail). 
 
 This guide will use a Linux environment, but you can adapt the commands to your operating system.
 
 ## Step 1: Create a New Laravel Project Using Laravel Sail
 
-Laravel Sail by default uses a [set of default services](https://laravel.com/docs/11.x/installation#choosing-your-sail-services), if the user doesn't specify any specific services. For this guide, we will use the PostgreSQL database service. This command is used to create a new Laravel project using Laravel Sail:
+Laravel Sail by default uses a [set of default services](https://laravel.com/docs/12.x/installation#choosing-your-sail-services), if the user doesn't specify any specific services. For this guide, we will use the PostgreSQL database service. This command is used to create a new Laravel project using Laravel Sail:
 
 <Tabs :tabs="['Shell']">
 
@@ -159,7 +159,7 @@ In order for the changes to take effect, let's rebuild the Docker containers:
 
 ## Step 3: Install and Configure Laravel Scout
 
-As per [Laravel Sail's documentation](https://laravel.com/docs/11.x/sail#executing-composer-commands), to install Laravel Scout via Composer, let's run the following command:
+As per [Laravel Sail's documentation](https://laravel.com/docs/12.x/sail#executing-composer-commands), to install Laravel Scout via Composer, let's run the following command:
 
 <Tabs :tabs="['Shell']">
 
@@ -223,7 +223,7 @@ return [
 
 ### Configure Queueing (Optional)
 
-While not required, you can configure Laravel Scout to handle indexing and searching using [queues](https://laravel.com/docs/11.x/scout#queueing). For this guide, we'll use the `database` queue driver, but you can use a plethora of different drivers mentioned in the [official Laravel documentation](https://laravel.com/docs/11.x/queues#driver-prerequisites). To configure the `database` queue driver, let's ensure that the database includes a table for the jobs by running the following commands:
+While not required, you can configure Laravel Scout to handle indexing and searching using [queues](https://laravel.com/docs/12.x/scout#queueing). For this guide, we'll use the `database` queue driver, but you can use a plethora of different drivers mentioned in the [official Laravel documentation](https://laravel.com/docs/12.x/queues#driver-prerequisites). To configure the `database` queue driver, let's ensure that the database includes a table for the jobs by running the following commands:
 
 <Tabs :tabs="['Shell']">
 
@@ -289,7 +289,7 @@ You can then run the queue worker to start processing the queued jobs:
 
 </Tabs>
 
-This will start the queue worker in the background, processing the queued jobs. For more info regarding queue workers and their benefits, you can refer to the [official Laravel documentation](https://laravel.com/docs/11.x/queues).
+This will start the queue worker in the background, processing the queued jobs. For more info regarding queue workers and their benefits, you can refer to the [official Laravel documentation](https://laravel.com/docs/12.x/queues).
 
 ## Step 4: Create a Model and Migrate Data
 
