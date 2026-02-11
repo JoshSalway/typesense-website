@@ -607,7 +607,7 @@ return [
 </Tabs>
 
 :::warning
-Don't forget to import your model a the top of the `config.php` file using `use App\Models\Game;`. This is essential for the `model-settings` to work.
+Don't forget to import your model at the top of the `config.php` file using `use App\Models\Game;`. This is essential for the `model-settings` to work.
 :::
 
 After setting up the Laravel Scout Driver, all subsequent model changes will be **automatically synced** with Typesense, using the [Model Observer](https://github.com/laravel/scout/blob/10.x/src/ModelObserver.php) provided by Laravel Scout. 
@@ -745,13 +745,13 @@ Game::search('persona')->get()->toArray();
 
 </Tabs>
 
-You can then proceed as you prefer. You can create a controller to handle the search requests, or use the [Typesense InstantSearch Adapter](https://github.com/typesense/typesense-instantsearch-adapter) to use Instantsearch.js on your frontend. If you prefer using a Javascript framework, you can use [Inertia.js](https://inertiajs.com/) to create a Vue.js, Svelte or React.js frontend.
+You can then proceed as you prefer. You can create a controller to handle the search requests, or use the [Typesense InstantSearch Adapter](https://github.com/typesense/typesense-instantsearch-adapter) to use InstantSearch.js on your frontend. If you prefer using a JavaScript framework, you can use [Inertia.js](https://inertiajs.com/) to create a Vue.js, Svelte, or React.js frontend.
 
 ## Examples
 
-This [Demo Laravel app](https://github.com/typesense/showcase-laravel-steam-games-search/tree/master) uses a React Typescript frontend with the Typesense InstantSearch Adapter, and uses Laravel Scout to sync the data from Postgres to Typesense.
+This [Demo Laravel app](https://github.com/typesense/showcase-laravel-steam-games-search/tree/master) uses a React TypeScript frontend with the Typesense InstantSearch Adapter, and uses Laravel Scout to sync the data from Postgres to Typesense.
 
 ## Additional Reading
 
-- Here's an article written by a Typesense user about [Moving from MySQL to Typesense for Full-text search in Laravel](https://tighten.com/insights/blazing-fast-full-text-search-in-laravel-from-mysql-to-typesense/).
+- Here's an article written by a Typesense user about [Moving from MySQL to Typesense for full-text search in Laravel](https://tighten.com/insights/blazing-fast-full-text-search-in-laravel-from-mysql-to-typesense/).
 - Here's a [video walk-through of how to set up the Typesense Scout driver](https://www.youtube.com/watch?v=0o3Ua52Y6pU) from the Laravel team. 
