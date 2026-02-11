@@ -20,7 +20,7 @@ There's also a free multi-episode course on Typesense from Laracasts available c
 
 ## Prerequisites
 
-This guide will use [Laravel Sail](https://laravel.com/docs/11.x/sail), a CLI that enables you to run Laravel applications using Docker. 
+This guide will use [Laravel Sail](https://laravel.com/docs/12.x/sail), a CLI that enables you to run Laravel applications using Docker. 
 
 Please ensure that you have Docker installed on your machine before proceeding. You can install Docker by following the instructions on the [official Docker website](https://docs.docker.com/get-docker/). 
 
